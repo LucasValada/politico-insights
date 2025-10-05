@@ -1,0 +1,14 @@
+{
+  "despesas": [
+    {
+      "id": "1",
+      "idExterno": "d1",
+      "politicoId": "p1",
+      "data": "2025-09-01",
+      "categoria": "Combustível",
+      "fornecedorCnpj": "11111111000111",
+      "valor": 980,
+      "urlComprovante": "https://ex/nota1"
+    }
+  ]
+}

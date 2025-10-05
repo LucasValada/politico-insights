@@ -1,0 +1,21 @@
+# node
+node_modules
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# env
+.env
+apps/**/.env
+
+# build
+dist
+coverage
+
+# docker
+pgdata
