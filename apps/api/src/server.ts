@@ -1,16 +1,14 @@
-import "dotenv/config";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { scoringRoutes } from "./routes/scoring";
+import { scoringRealRoutes } from "./routes/scoringReal";
 
 const app = Fastify({ logger: true });
 
 await app.register(cors, { origin: true });
-await app.register(scoringRoutes);
+await app.register(scoringRealRoutes);
 
-app.get("/health", async () => ({ ok: true, ts: new Date().toISOString() }));
+app.get("/health", async () => ({ ok: true }));
 
-const port = Number(process.env.PORT || 3333);
-app.listen({ port, host: "0.0.0.0" }).then(() => {
-  console.log(`API running on http://localhost:${port}`);
+app.listen({ port: 3333, host: "0.0.0.0" }).then(() => {
+  console.log("✅ API running on http://localhost:3333");
 });

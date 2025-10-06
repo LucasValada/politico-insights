@@ -13,10 +13,12 @@
     "@pi/shared": "*",
     "dotenv": "^17.2.3",
     "fastify": "^5.6.1",
+    "node-fetch": "^2.7.0",
     "zod": "^4.1.11"
   },
   "devDependencies": {
     "@types/node": "^24.6.2",
+    "@types/node-fetch": "^2.6.13",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
